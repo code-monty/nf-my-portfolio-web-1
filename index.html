@@ -6,10 +6,11 @@
     <link href="src/output.css" rel="stylesheet">
     <title></title>
 </head>
-<body>
-    <header class="max-w-full container mx-auto px-8 py-4 bg-primaryback flex items-center justify-between font-primary text-2xl text-secondary">
+<body class="font-primary">
+    <!--HEADER-->
+    <header class="max-w-full container mx-auto px-8 py-4 bg-header flex items-center justify-around text-2xl text-secondary gap-">
         <!--Logo-->
-        <div class="flex items-center space-x-4 font-bold">
+        <div class="flex items-center space-x-4 font-bold cursor-pointer">
             <h1> { / }</h1>
             <div>
                 <h1>code</h1>
@@ -18,21 +19,46 @@
         </div>
 
         <!--Navigation-->
-        <ul class="flex items-center space-x-4">
+        <ul class="hidden md:flex items-center space-x-4 font-bold">
             <li>
-                <a class="#home">Home</a>
+                <a href="#home" class=" hover:text-[#FBDF5A] cursor-pointer transition duration-300">Home</a>
             </li>
              <li>
-                <a class="#home">Skills</a>
+                <a href="#skills" class="hover:text-[#FBDF5A] cursor-pointer transition duration-300">Skills</a>
             </li>
              <li>
-                <a class="#home">Projects</a>
+                <a href="#projects" class="hover:text-[#FBDF5A] cursor-pointer transition duration-300">Projects</a>
             </li>
              <li>
-                <a class="#home">Experience</a>
+                <a href="#experience" class="hover:text-[#FBDF5A] cursor-pointer transition duration-300">Experience</a>
             </li>
         </ul>
 
+        <!--Button hire me!-->
+        <div class="text-primary font-bold text-xl md:text-2xl ">
+        <a href="#contact" class="bg-button1 px-6 py-4 rounded-full cursor-pointer hover:bg-button1/95 transition duration-300">Hire Me!</a>
+        </div>
     </header>
+    
+    <!--HOME-->
+    <section class="section-container bg-linear-to-b from-yellow-300 to-orange-300 flex flex-col md:flex-row items-center gap-8">
+        <!--Left Side-->
+        <div class="text-3xl md:w-[60%] space-y-6 order-2 md:order-1 text-center">
+            <h2>Hello I'm</h2>
+            <h1 class="font-bold text-5xl">Angelo Monterroyo</h1>
+            <p>I’m a Frontend Developer & UI/UX Designer passionate about crafting pixel-perfect, responsive, and user-friendly websites. 
+                I blend clean code with intuitive design to create seamless digital experiences.</p>
+        </div>
+        
+        <!--Right Side-->
+        <div class="md:w-[40%] mx-auto flex justify-center order-1 md:order-2">
+            <img src="profile2.jpg" class=" w-full md:w-[60%] rounded-[100%] border-4 border-black">
+        </div>
+    </section>
+
+
+
+
+
 </body>
 </html>

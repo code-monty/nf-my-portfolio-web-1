@@ -5,6 +5,12 @@
 @theme {
     --color-primary: black;
     --color-secondary: white;
-    --color-primaryback: #2855B2;
+    --color-header: #2855B2;
+    --color-button1: #FBDF5A;
+    --color-hover1: #6894D3;
     --font-primary: "Fira Code", monospace;
+}
+
+.section-container {
+    @apply max-w-full container mx-auto px-12 py-20;
 }
