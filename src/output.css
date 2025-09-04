@@ -232,14 +232,17 @@
   .w-\[20em\] {
     width: 20em;
   }
-  .w-\[95\%\] {
-    width: 95%;
+  .w-\[25em\] {
+    width: 25em;
   }
   .w-\[250px\] {
     width: 250px;
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[25em\] {
+    max-width: 25em;
   }
   .max-w-\[70\%\] {
     max-width: 70%;
@@ -481,21 +484,6 @@
       display: flex;
     }
   }
-  .md\:w-\[20em\] {
-    @media (width >= 48rem) {
-      width: 20em;
-    }
-  }
-  .md\:w-\[30\%\] {
-    @media (width >= 48rem) {
-      width: 30%;
-    }
-  }
-  .md\:w-\[33\%\] {
-    @media (width >= 48rem) {
-      width: 33%;
-    }
-  }
   .md\:w-\[40\%\] {
     @media (width >= 48rem) {
       width: 40%;
@@ -506,6 +494,11 @@
       width: 60%;
     }
   }
+  .md\:max-w-\[50em\] {
+    @media (width >= 48rem) {
+      max-width: 50em;
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -514,6 +507,11 @@
   .md\:flex-wrap {
     @media (width >= 48rem) {
       flex-wrap: wrap;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
     }
   }
   .md\:text-2xl {
@@ -548,6 +546,13 @@
   max-width: 100%;
   padding-inline: calc(var(--spacing) * 12);
   padding-block: calc(var(--spacing) * 20);
+}
+input {
+  width: 50em;
+  height: 3em;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 1em;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
