@@ -10,6 +10,7 @@
     --color-orange-300: oklch(83.7% 0.128 66.29);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-black: #000;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
@@ -235,6 +236,15 @@
   .w-\[25em\] {
     width: 25em;
   }
+  .w-\[49\%\] {
+    width: 49%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[75\%\] {
+    width: 75%;
+  }
   .w-\[250px\] {
     width: 250px;
   }
@@ -344,6 +354,9 @@
   }
   .bg-header {
     background-color: var(--color-header);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom;
@@ -489,6 +502,11 @@
       width: 40%;
     }
   }
+  .md\:w-\[49\%\] {
+    @media (width >= 48rem) {
+      width: 49%;
+    }
+  }
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
@@ -546,13 +564,6 @@
   max-width: 100%;
   padding-inline: calc(var(--spacing) * 12);
   padding-block: calc(var(--spacing) * 20);
-}
-input {
-  width: 50em;
-  height: 3em;
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 1em;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
