@@ -124,7 +124,7 @@
         <!--Title-->
         <h1 class="text-5xl font-bold">EXPERIENCE</h1>
         <!--3 Box EXP-->
-        <div class="w-full flex flex-col md:flex-row items-center justify-center gap-8">
+        <div class="w-full flex flex-col lg:flex-row items-center justify-center gap-8">
             <!--Each Box-->
             <div class="border-2 w-[20em] p-4 bg-[#FFE2BF] flex flex-col items-center justify-center rounded-2xl gap-4">
                 <!--Title and Logo-->
@@ -181,17 +181,28 @@
         <p>Fill up to this information!</p>
         <!--FORM-->
         <div class="">
-        <form action="#" class="max-w-[25em] md:max-w-[50em] border-2 p-4 flex flex-col md:flex-row flex-wrap items-center justify-center gap-2">
-            <div class="flex flex-col flex-wrap w-full md:w-[49%] gap-2">
+        <form action="#" class="max-w-[25em] md:max-w-[35em] p-4 flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 bg-[#FFE2BF] border-2 rounded-md">
+    
+            <div class="flex flex-col flex-wrap w-full md:w-[48%] gap-2 max-sm:text-center">
             <label for ="fname">First Name:</label>
             <input type="text" name="fname" class="fname bg-white border-2">
             </div>
-            <div class="flex flex-col flex-wrap w-full md:w-[49%] gap-2">
+            <div class="flex flex-col flex-wrap w-full md:w-[48%] gap-2 max-sm:text-center">
             <label for ="fname">Last Name:</label>
             <input type="text" name="fname" class="lname bg-white border-2">
-            </div>
-            <label for ="fname">First Name:</label>
-            <input type="text" name="fname">
+          </div>
+            <div class="flex flex-col flex-wrap w-full gap-2 max-sm:text-center">
+            <label for ="fname">Email:</label>
+            <input type="text" name="fname" class="lname bg-white border-2">
+          </div>
+          <div class="flex flex-col flex-wrap w-full gap-2 max-sm:text-center">
+            <label for ="fname">Message:</label>
+            <input type="text" name="fname" class="lname bg-white border-2 h-[10em]">
+          </div>
+
+          <a href="#" class="bg-blue-700 text-yellow-400 p-4 px-8 rounded-xl transition duration-300 hover:bg-blue-900">Send Message!</a>
+          
+        
         </form>
         </div>
     </section>
