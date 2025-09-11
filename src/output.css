@@ -15,7 +15,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --container-xl: 36rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -29,6 +28,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
@@ -191,6 +191,9 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
   .order-1 {
     order: 1;
   }
@@ -227,17 +230,8 @@
   .table {
     display: table;
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
-  .h-\[10\] {
-    height: 10;
-  }
   .h-\[10em\] {
     height: 10em;
-  }
-  .h-\[15em\] {
-    height: 15em;
   }
   .h-\[200px\] {
     height: 200px;
@@ -263,9 +257,6 @@
   .max-w-\[30em\] {
     max-width: 30em;
   }
-  .max-w-\[40em\] {
-    max-width: 40em;
-  }
   .max-w-\[70\%\] {
     max-width: 70%;
   }
@@ -274,9 +265,6 @@
   }
   .max-w-full {
     max-width: 100%;
-  }
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -346,6 +334,9 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
@@ -369,6 +360,9 @@
   }
   .bg-\[\#FFE2BF\] {
     background-color: #FFE2BF;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-blue-700 {
     background-color: var(--color-blue-700);
@@ -427,14 +421,20 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
-  }
-  .text-start {
-    text-align: start;
   }
   .font-primary {
     font-family: var(--font-primary);
@@ -473,8 +473,14 @@
   .text-secondary {
     color: var(--color-secondary);
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .text-yellow-400 {
     color: var(--color-yellow-400);
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
@@ -524,11 +530,6 @@
       text-align: center;
     }
   }
-  .sm\:flex-row {
-    @media (width >= 40rem) {
-      flex-direction: row;
-    }
-  }
   .md\:order-1 {
     @media (width >= 48rem) {
       order: 1;
@@ -554,11 +555,6 @@
       width: 48%;
     }
   }
-  .md\:w-\[49\%\] {
-    @media (width >= 48rem) {
-      width: 49%;
-    }
-  }
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
@@ -569,11 +565,6 @@
       max-width: 35em;
     }
   }
-  .md\:max-w-\[50em\] {
-    @media (width >= 48rem) {
-      max-width: 50em;
-    }
-  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -582,11 +573,6 @@
   .md\:flex-wrap {
     @media (width >= 48rem) {
       flex-wrap: wrap;
-    }
-  }
-  .md\:text-center {
-    @media (width >= 48rem) {
-      text-align: center;
     }
   }
   .md\:text-2xl {

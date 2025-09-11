@@ -8,7 +8,7 @@
 </head>
 <body class="font-primary">
     <!--HEADER-->
-    <header class="max-w-full container mx-auto px-8 py-4 bg-header flex items-center justify-around text-2xl text-secondary gap-8">
+    <header class="fixed max-w-full container mx-auto px-8 py-2 bg-header flex items-center justify-around text-2xl text-secondary gap-8">
         <!--Logo-->
         <div class="flex items-center space-x-4 font-bold cursor-pointer">
             <h1> { / }</h1>
@@ -177,34 +177,40 @@
 
     <!--CONTACT US-->
     <section class="section-container bg-linear-to-b from-yellow-300 to-orange-300 flex flex-col items-center justify-center gap-8">
+        <div class="flex flex-col gap-4">
         <h1 class="text-5xl font-bold">CONTACT US</h1>
         <p>Fill up to this information!</p>
+        </div>
         <!--FORM-->
-        <div class="">
-        <form action="#" class="max-w-[25em] md:max-w-[35em] p-4 flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 bg-[#FFE2BF] border-2 rounded-md">
+        <div id="contact">
+        <form action="#" method="post" class="max-w-[25em] w-full md:max-w-[35em] p-4 flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 bg-[#FFE2BF] border-2 rounded-md">
     
-            <div class="flex flex-col flex-wrap w-full md:w-[48%] gap-2 max-sm:text-center">
+            <div class="flex flex-col w-full md:w-[48%] gap-2 max-sm:text-center">
             <label for ="fname">First Name:</label>
-            <input type="text" name="fname" class="fname bg-white border-2">
+            <input type="text" name="fname" class="fname bg-white border-2 rounded-lg">
             </div>
-            <div class="flex flex-col flex-wrap w-full md:w-[48%] gap-2 max-sm:text-center">
+            
+            <div class="flex flex-col w-full md:w-[48%] gap-2 max-sm:text-center">
             <label for ="fname">Last Name:</label>
-            <input type="text" name="fname" class="lname bg-white border-2">
+            <input type="text" name="fname" class="lname bg-white border-2 rounded-lg">
           </div>
             <div class="flex flex-col flex-wrap w-full gap-2 max-sm:text-center">
             <label for ="fname">Email:</label>
-            <input type="text" name="fname" class="lname bg-white border-2">
+            <input type="text" name="fname" class="lname bg-white border-2 rounded-lg">
           </div>
           <div class="flex flex-col flex-wrap w-full gap-2 max-sm:text-center">
             <label for ="fname">Message:</label>
-            <input type="text" name="fname" class="lname bg-white border-2 h-[10em]">
+            <input type="text" name="fname" class="lname bg-white border-2 h-[10em] rounded-lg">
           </div>
 
-          <a href="#" class="bg-blue-700 text-yellow-400 p-4 px-8 rounded-xl transition duration-300 hover:bg-blue-900">Send Message!</a>
-          
-        
+          <button type="submit" class="bg-blue-700 text-yellow-400 p-4 px-8 rounded-xl transition duration-300 hover:bg-blue-900">Send Message!</button>
         </form>
         </div>
+    </section>
+
+    <!--CREDITS-->
+    <section class="max-w-full container mx-auto px-12 py-5 flex items-center justify-center bg-black"> 
+        <h3 class="italic text-white"> code monty© - 2025 || All rights reserved </h3>
     </section>
 
 
